@@ -1,0 +1,28 @@
+
+hora=int(input())
+minutos=int(input())
+segundos=int(input())
+
+
+if hora>=0 and hora<=23:
+    print(hora)
+else:
+    print("FORMATO DE HORA NO VÁLIDO")
+
+if minutos>=0 and minutos<=59:
+    print(minutos)
+else:
+    print("FORMATO DE MINUTOS NO VÁLIDO")
+    exit()
+
+
+if segundos>=0 and segundos<=59:
+
+    print(segundos)
+    segundosnuevos=segundos+1
+else:
+    print("FORMATO DE SEGUNDOS NO VÁLIDO")
+    exit()
+
+print("La hora elegida por usuario es= ",hora," : ",minutos," : ",segundos)
+print("La hora elegida por usuario un segundo después es= ",hora," : ",minutos," : ",segundosnuevos)
